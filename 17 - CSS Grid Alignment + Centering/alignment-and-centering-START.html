@@ -20,7 +20,7 @@
     <div class="itm itm8">8</div>
     <div class="itm itm9">9</div>
     <div class="itm itm10">10</div>
-    <div class="itm itm11">11</div>
+    <!-- <div class="itm itm11">11</div>
     <div class="itm itm12">12</div>
     <div class="itm itm13">13</div>
     <div class="itm itm14">14</div>
@@ -49,7 +49,7 @@
     <div class="itm itm37">37</div>
     <div class="itm itm38">38</div>
     <div class="itm itm39">39</div>
-    <div class="itm itm40">40</div>
+    <div class="itm itm40">40</div> -->
   </div>
 
   <style>
@@ -70,7 +70,23 @@
     .container {
       display: grid;
       grid-gap: 20px;
-      grid-template-columns: repeat(10, 1fr);
+      border: 10px solid var(--yellow);
+      height: 500px;
+      grid-template-columns: repeat(5, 1fr);
+      /* grid-template-rows: repeat(5, 100px); */
+      /* justify-items: center;
+      align-items: center; */
+      place-items: stretch stretch;
+      justify-content: space-around;
+      align-content: space-between;
+    }
+
+    .itm {
+      background: white;
+    }
+
+    .ite5 {
+      justify-self: center;
     }
   </style>
 </body>
